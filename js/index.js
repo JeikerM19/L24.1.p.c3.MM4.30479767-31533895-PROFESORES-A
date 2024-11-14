@@ -36,31 +36,9 @@ let profC3 = profesoresCategoria(profesores, 3);
 let profC4 = profesoresCategoria(profesores, 4);
 let profC5 = profesoresCategoria(profesores, 5);
 
-salida.innerHTML = `Profesores de categoria Instructor: <br>`;
-profC1.forEach((profesores) => {
-    salida.innerHTML += `Cedula: ${profesores.cedula} - Nombre: ${profesores.nombre} - Sexo: ${profesores.sexo} <br>`;
-});
 
-salida.innerHTML += `<br>Profesores de categoria Asistente: <br>`;
-profC2.forEach((profesores) => {
-    salida.innerHTML += `Cedula: ${profesores.cedula} - Nombre: ${profesores.nombre} - Sexo: ${profesores.sexo} <br>`;
-});
-
-salida.innerHTML += `<br>Profesores de categoria Agrgado: <br>`;
-profC3.forEach((profesores) => {
-    salida.innerHTML += `Cedula: ${profesores.cedula} - Nombre: ${profesores.nombre} - Sexo: ${profesores.sexo} <br>`;
-});
-
-salida.innerHTML += `<br>Profesores de categoria Asociado: <br>`;
-profC4.forEach((profesores) => {
-    salida.innerHTML += `Cedula: ${profesores.cedula} - Nombre: ${profesores.nombre} - Sexo: ${profesores.sexo} <br>`;
-});
-
-salida.innerHTML += `<br>Profesores de categoria Titular: <br>`;
-profC5.forEach((profesores) => {
-    salida.innerHTML += `Cedula: ${profesores.cedula} - Nombre: ${profesores.nombre} - Sexo: ${profesores.sexo} <br>`;
-});
-
-
-
-
+salida.innerHTML = JSON.stringify(profC1);
+salida.innerHTML += "<br><br>" + JSON.stringify(profC2);
+salida.innerHTML += "<br><br>" + JSON.stringify(profC3);
+salida.innerHTML += "<br><br>" + JSON.stringify(profC4);
+salida.innerHTML += "<br><br>" + JSON.stringify(profC5);
